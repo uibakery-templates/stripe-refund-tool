@@ -1,0 +1,138 @@
+id: '17152350570100.24886508034012356'
+kind: workflow
+name: handleTablePageChange
+nameConfigured: true
+steps:
+  - id: '17152418484300.500552546616166'
+    type: condition
+    name: condition
+    params:
+      - type: code
+        value: ./condition.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: steps
+        value:
+          - condition: true
+            steps:
+              - id: '17152393847740.8678630759013959'
+                type: condition
+                name: isSearchEmpty
+                params:
+                  - type: code
+                    value: ./isSearchEmpty.js
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: steps
+                    value:
+                      - condition: true
+                        steps:
+                          - id: '17152350934030.2870088444839354'
+                            type: executeAction
+                            name: execute
+                            params:
+                              - type: action
+                                value: '17151486631770.6134980299835497'
+                                valueType: custom
+                              - type: isActionsLibraryCall
+                                value: false
+                                valueType: custom
+                              - type: customParams
+                                value: ./execute-customParams.js
+                                valueType: interpolatedValue
+                                interpolationType: code
+                              - type: successMapper
+                                value: ''
+                                valueType: interpolatedValue
+                                interpolationType: code
+                              - type: failureMapper
+                                value: ''
+                                valueType: interpolatedValue
+                                interpolationType: code
+                              - type: mapperEnabled
+                                value: false
+                                valueType: custom
+                            level: 2
+                            fallthroughError: false
+                            isChanged: true
+                      - condition: false
+                        steps:
+                          - id: '17152394215310.8658645168420189'
+                            type: executeAction
+                            name: execute2
+                            params:
+                              - type: action
+                                value: '17151605353020.5175033904575299'
+                                valueType: custom
+                              - type: isActionsLibraryCall
+                                value: false
+                                valueType: custom
+                              - type: customParams
+                                value: ./execute2-customParams.js
+                                valueType: interpolatedValue
+                                interpolationType: code
+                              - type: successMapper
+                                value: ''
+                                valueType: interpolatedValue
+                                interpolationType: code
+                              - type: failureMapper
+                                value: ''
+                                valueType: interpolatedValue
+                                interpolationType: code
+                              - type: mapperEnabled
+                                value: false
+                                valueType: custom
+                            level: 2
+                            fallthroughError: false
+                            isChanged: true
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+                nameConfigured: true
+              - id: '17152354442230.6982967137135494'
+                type: putInStore
+                name: save
+                params:
+                  - type: name
+                    value: '17151610225750.6765154728278866'
+                    valueType: string
+                  - type: value
+                    value: '{{data}}'
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: producible
+                    value: true
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+          - condition: false
+            steps: []
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: true
+parentPageId: '1'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleTablePageChange.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleTablePageChange.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleTablePageChange.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true
+parentId: '17151606160020.6245620962289125'

@@ -1,0 +1,37 @@
+id: '17151498506780.160864454504003'
+name: Billing Profile
+url: billing-profile
+roleIds: []
+disableInMenu: false
+hideFromMenu: false
+parentPageId: ''
+slots:
+  - id: '17151498506780.7957570891429342'
+    name: content
+    children:
+      - id: '17151498506780.018501526501039756'
+        definitionId: grid
+        parentSlotId: '17151498506780.7957570891429342'
+        styles: {}
+        properties:
+          name: billing-profile
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        actions:
+          pageLoad:
+            - action: '17151644467140.9200363648096828'
+              paramCode: ''
+              blockPageLoad: false
+              preventDefault: false
+              index: 0
+        slots:
+          - id: '17151498506790.7015259541412582'
+            name: content
+            children:
+              - components/chargesTable.yml
+              - components/fetchcustomerprofileDetail.yml
+              - components/confirmationModal/confirmationModal.yml
+              - components/chargeDetails2.yml

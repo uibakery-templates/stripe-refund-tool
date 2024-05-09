@@ -1,0 +1,1 @@
+return {{ui.search.value.length === 0}};

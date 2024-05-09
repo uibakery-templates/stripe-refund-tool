@@ -1,0 +1,819 @@
+storeItemList:
+  - id: '17151584101520.4871353068059512'
+    name: charges
+    value:
+      data:
+        - amount: 100
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_1OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: null
+              country: null
+              line1: null
+              line2: null
+              postal_code: null
+              state: null
+            email: null
+            name: Jenny Rosen
+            phone: null
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567890
+          currency: usd
+          customer: null
+          description: My First Test Charge (created for API docs)
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_1OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_1OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: visa
+              checks:
+                address_line1_check: null
+                address_postal_code_check: null
+                cvc_check: pass
+              country: US
+              exp_month: 8
+              exp_year: 2024
+              extended_authorization:
+                status: disabled
+              fingerprint: r40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: unavailable
+              installments: null
+              last4: '4242'
+              mandate: null
+              multicapture:
+                status: unavailable
+              network: visa
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 100
+                status: unavailable
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: null
+          receipt_number: null
+          receipt_url: >-
+            https://pakrym-manage-mydev.dev.stripe.me/receipts/payment/CAcaFwoVYWNjdF8xT1BvdU1KTjV2UUJkV0V4KL3JkawGMgZvNmQ3SW46LCKn_twcP-jc9phNH9BfAtUKJcNs5Gy9n0cn7wNp9IWz2coUhEmAKuyETwtJ
+          refunded: false
+          refunds:
+            data:
+              - amount: 100
+                balance_transaction: null
+                charge: ch_1OPoueJN5vQBdWEx5AWizjSY
+                created: 1234567890
+                currency: usd
+                destination_details:
+                  card:
+                    type: reversal
+                  type: card
+                id: re_1OPoujJN5vQBdWExUGBANu1j
+                metadata: {}
+                object: refund
+                payment_intent: null
+                reason: null
+                receipt_number: null
+                source_transfer_reversal: null
+                status: succeeded
+                transfer_reversal: null
+            has_more: false
+            object: list
+            url: /v1/charges/ch_1OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping: null
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+        - amount: 200
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_2OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: New York
+              country: US
+              line1: 123 Main Street
+              line2: null
+              postal_code: '10001'
+              state: NY
+            email: john.doe@example.com
+            name: John Doe
+            phone: '1234567890'
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567891
+          currency: usd
+          customer: null
+          description: Test Charge 1
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_2OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_2OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: mastercard
+              checks:
+                address_line1_check: pass
+                address_postal_code_check: pass
+                cvc_check: pass
+              country: US
+              exp_month: 9
+              exp_year: 2023
+              extended_authorization:
+                status: disabled
+              fingerprint: a40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: available
+              installments: null
+              last4: '5678'
+              mandate: null
+              multicapture:
+                status: available
+              network: mastercard
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 200
+                status: available
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: john.doe@example.com
+          receipt_number: null
+          receipt_url: https://example.com/receipts/payment/2OPoueJN5vQBdWEx5AWizjSY
+          refunded: false
+          refunds:
+            data: []
+            has_more: false
+            object: list
+            url: /v1/charges/ch_2OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping:
+            address:
+              city: New York
+              country: US
+              line1: 123 Main Street
+              line2: null
+              postal_code: '10001'
+              state: NY
+            name: John Doe
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+        - amount: 150
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_3OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: Los Angeles
+              country: US
+              line1: 456 Elm Street
+              line2: null
+              postal_code: '90001'
+              state: CA
+            email: jane.doe@example.com
+            name: Jane Doe
+            phone: '9876543210'
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567892
+          currency: usd
+          customer: null
+          description: Test Charge 2
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_3OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_3OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: amex
+              checks:
+                address_line1_check: pass
+                address_postal_code_check: pass
+                cvc_check: pass
+              country: US
+              exp_month: 10
+              exp_year: 2025
+              extended_authorization:
+                status: disabled
+              fingerprint: b40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: available
+              installments: null
+              last4: '7890'
+              mandate: null
+              multicapture:
+                status: available
+              network: amex
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 150
+                status: available
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: jane.doe@example.com
+          receipt_number: null
+          receipt_url: https://example.com/receipts/payment/3OPoueJN5vQBdWEx5AWizjSY
+          refunded: false
+          refunds:
+            data: []
+            has_more: false
+            object: list
+            url: /v1/charges/ch_3OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping:
+            address:
+              city: Los Angeles
+              country: US
+              line1: 456 Elm Street
+              line2: null
+              postal_code: '90001'
+              state: CA
+            name: Jane Doe
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+        - amount: 75
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_4OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: Chicago
+              country: US
+              line1: 789 Oak Avenue
+              line2: null
+              postal_code: '60601'
+              state: IL
+            email: bob.smith@example.com
+            name: Bob Smith
+            phone: '5551234567'
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567893
+          currency: usd
+          customer: null
+          description: Test Charge 3
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_4OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_4OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: discover
+              checks:
+                address_line1_check: pass
+                address_postal_code_check: pass
+                cvc_check: pass
+              country: US
+              exp_month: 11
+              exp_year: 2026
+              extended_authorization:
+                status: disabled
+              fingerprint: c40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: available
+              installments: null
+              last4: '1234'
+              mandate: null
+              multicapture:
+                status: available
+              network: discover
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 75
+                status: available
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: bob.smith@example.com
+          receipt_number: null
+          receipt_url: https://example.com/receipts/payment/4OPoueJN5vQBdWEx5AWizjSY
+          refunded: false
+          refunds:
+            data: []
+            has_more: false
+            object: list
+            url: /v1/charges/ch_4OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping:
+            address:
+              city: Chicago
+              country: US
+              line1: 789 Oak Avenue
+              line2: null
+              postal_code: '60601'
+              state: IL
+            name: Bob Smith
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+      has_more: false
+      object: list
+      url: /v1/charges
+    valueType: object
+    initialValue:
+      data:
+        - amount: 100
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_1OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: null
+              country: null
+              line1: null
+              line2: null
+              postal_code: null
+              state: null
+            email: null
+            name: Jenny Rosen
+            phone: null
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567890
+          currency: usd
+          customer: null
+          description: My First Test Charge (created for API docs)
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_1OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_1OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: visa
+              checks:
+                address_line1_check: null
+                address_postal_code_check: null
+                cvc_check: pass
+              country: US
+              exp_month: 8
+              exp_year: 2024
+              extended_authorization:
+                status: disabled
+              fingerprint: r40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: unavailable
+              installments: null
+              last4: '4242'
+              mandate: null
+              multicapture:
+                status: unavailable
+              network: visa
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 100
+                status: unavailable
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: null
+          receipt_number: null
+          receipt_url: >-
+            https://pakrym-manage-mydev.dev.stripe.me/receipts/payment/CAcaFwoVYWNjdF8xT1BvdU1KTjV2UUJkV0V4KL3JkawGMgZvNmQ3SW46LCKn_twcP-jc9phNH9BfAtUKJcNs5Gy9n0cn7wNp9IWz2coUhEmAKuyETwtJ
+          refunded: false
+          refunds:
+            data:
+              - amount: 100
+                balance_transaction: null
+                charge: ch_1OPoueJN5vQBdWEx5AWizjSY
+                created: 1234567890
+                currency: usd
+                destination_details:
+                  card:
+                    type: reversal
+                  type: card
+                id: re_1OPoujJN5vQBdWExUGBANu1j
+                metadata: {}
+                object: refund
+                payment_intent: null
+                reason: null
+                receipt_number: null
+                source_transfer_reversal: null
+                status: succeeded
+                transfer_reversal: null
+            has_more: false
+            object: list
+            url: /v1/charges/ch_1OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping: null
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+        - amount: 200
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_2OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: New York
+              country: US
+              line1: 123 Main Street
+              line2: null
+              postal_code: '10001'
+              state: NY
+            email: john.doe@example.com
+            name: John Doe
+            phone: '1234567890'
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567891
+          currency: usd
+          customer: null
+          description: Test Charge 1
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_2OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_2OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: mastercard
+              checks:
+                address_line1_check: pass
+                address_postal_code_check: pass
+                cvc_check: pass
+              country: US
+              exp_month: 9
+              exp_year: 2023
+              extended_authorization:
+                status: disabled
+              fingerprint: a40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: available
+              installments: null
+              last4: '5678'
+              mandate: null
+              multicapture:
+                status: available
+              network: mastercard
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 200
+                status: available
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: john.doe@example.com
+          receipt_number: null
+          receipt_url: https://example.com/receipts/payment/2OPoueJN5vQBdWEx5AWizjSY
+          refunded: false
+          refunds:
+            data: []
+            has_more: false
+            object: list
+            url: /v1/charges/ch_2OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping:
+            address:
+              city: New York
+              country: US
+              line1: 123 Main Street
+              line2: null
+              postal_code: '10001'
+              state: NY
+            name: John Doe
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+        - amount: 150
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_3OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: Los Angeles
+              country: US
+              line1: 456 Elm Street
+              line2: null
+              postal_code: '90001'
+              state: CA
+            email: jane.doe@example.com
+            name: Jane Doe
+            phone: '9876543210'
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567892
+          currency: usd
+          customer: null
+          description: Test Charge 2
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_3OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_3OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: amex
+              checks:
+                address_line1_check: pass
+                address_postal_code_check: pass
+                cvc_check: pass
+              country: US
+              exp_month: 10
+              exp_year: 2025
+              extended_authorization:
+                status: disabled
+              fingerprint: b40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: available
+              installments: null
+              last4: '7890'
+              mandate: null
+              multicapture:
+                status: available
+              network: amex
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 150
+                status: available
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: jane.doe@example.com
+          receipt_number: null
+          receipt_url: https://example.com/receipts/payment/3OPoueJN5vQBdWEx5AWizjSY
+          refunded: false
+          refunds:
+            data: []
+            has_more: false
+            object: list
+            url: /v1/charges/ch_3OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping:
+            address:
+              city: Los Angeles
+              country: US
+              line1: 456 Elm Street
+              line2: null
+              postal_code: '90001'
+              state: CA
+            name: Jane Doe
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+        - amount: 75
+          amount_captured: 0
+          amount_refunded: 0
+          application: null
+          application_fee: null
+          application_fee_amount: null
+          balance_transaction: txn_4OPoueJN5vQBdWEx8dhHMVqh
+          billing_details:
+            address:
+              city: Chicago
+              country: US
+              line1: 789 Oak Avenue
+              line2: null
+              postal_code: '60601'
+              state: IL
+            email: bob.smith@example.com
+            name: Bob Smith
+            phone: '5551234567'
+          calculated_statement_descriptor: null
+          captured: false
+          created: 1234567893
+          currency: usd
+          customer: null
+          description: Test Charge 3
+          disputed: false
+          failure_balance_transaction: null
+          failure_code: null
+          failure_message: null
+          fraud_details: {}
+          id: ch_4OPoueJN5vQBdWEx5AWizjSY
+          invoice: null
+          livemode: false
+          metadata: {}
+          object: charge
+          on_behalf_of: null
+          outcome: null
+          paid: true
+          payment_intent: null
+          payment_method: card_4OPoudJN5vQBdWExSTD9mIPF
+          payment_method_details:
+            card:
+              amount_authorized: null
+              brand: discover
+              checks:
+                address_line1_check: pass
+                address_postal_code_check: pass
+                cvc_check: pass
+              country: US
+              exp_month: 11
+              exp_year: 2026
+              extended_authorization:
+                status: disabled
+              fingerprint: c40d4vOgg3VecDJF
+              funding: credit
+              incremental_authorization:
+                status: available
+              installments: null
+              last4: '1234'
+              mandate: null
+              multicapture:
+                status: available
+              network: discover
+              network_token:
+                used: false
+              overcapture:
+                maximum_amount_capturable: 75
+                status: available
+              three_d_secure: null
+              wallet: null
+            type: card
+          receipt_email: bob.smith@example.com
+          receipt_number: null
+          receipt_url: https://example.com/receipts/payment/4OPoueJN5vQBdWEx5AWizjSY
+          refunded: false
+          refunds:
+            data: []
+            has_more: false
+            object: list
+            url: /v1/charges/ch_4OPoueJN5vQBdWEx5AWizjSY/refunds
+          review: null
+          shipping:
+            address:
+              city: Chicago
+              country: US
+              line1: 789 Oak Avenue
+              line2: null
+              postal_code: '60601'
+              state: IL
+            name: Bob Smith
+          source_transfer: null
+          statement_descriptor: null
+          statement_descriptor_suffix: null
+          status: succeeded
+          transfer_data: null
+          transfer_group: null
+      has_more: false
+      object: list
+      url: /v1/charges
+    version: 1
+    parentPageId: '17151498506780.160864454504003'
+  - id: '17151610225750.6765154728278866'
+    name: customersRequest
+    value: {}
+    valueType: object
+    initialValue: {}
+    version: 1
+    parentPageId: '1'
+metadata:
+  favicon: ''
+  code: ''
+  title: stripe-refunds
+  description: ''
+  breakpoints: []
+  rendererCachingEnabled: true
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+  density: compact
+internalType: project

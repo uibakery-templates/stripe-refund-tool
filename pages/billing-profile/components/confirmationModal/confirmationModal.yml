@@ -1,0 +1,76 @@
+id: '17151516453880.7662301665641247'
+definitionId: modal
+parentSlotId: '17151498506790.7015259541412582'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 130
+      w: 5
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+    modalSize:
+      widthValue: 320
+      widthUnit: px
+      heightValue: auto
+      heightUnit: null
+      minWidthValue: 0
+      minWidthUnit: px
+      minHeightValue: 0
+      minHeightUnit: px
+      maxWidthValue: none
+      maxWidthUnit: null
+      maxHeightValue: none
+      maxHeightUnit: null
+  xs:
+    gridItem:
+      x: 0
+      y: 302
+      w: 24
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: confirmationModal
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  buttonHidden:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showLoading:
+    value: false
+    dataValue: '{{actions.fetchCustomerCharges.loading}}'
+    withData: true
+  showHeader: true
+  showFooter: true
+  closeOnEsc: true
+  closeOnBackdrop: false
+actions: {}
+slots:
+  - id: '17151516453880.9423894838212388'
+    name: header
+    children:
+      - modalTitle.yml
+  - id: '17151516453880.8569963938146823'
+    name: body
+    children:
+      - chargeDetails.yml
+      - modalInfo.yml
+  - id: '17151516453880.5362145797614628'
+    name: footer
+    children:
+      - confirmRefundButton.yml
+      - cancelRefundButton.yml

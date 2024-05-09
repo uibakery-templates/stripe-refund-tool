@@ -1,0 +1,135 @@
+id: '17151606226650.8070221634144665'
+kind: workflow
+name: handleSearchInput
+nameConfigured: true
+steps:
+  - id: '17152357484590.9913215817275356'
+    type: customAsyncCode
+    name: updatePageIndex
+    params:
+      - type: asyncCode
+        value: ./updatePageIndex.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17151606350490.05227388314092041'
+    type: condition
+    name: isSearchEmpty
+    params:
+      - type: code
+        value: ./isSearchEmpty.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: steps
+        value:
+          - condition: true
+            steps:
+              - id: '17151608484380.5132159897582795'
+                type: executeAction
+                name: execute
+                params:
+                  - type: action
+                    value: '17151486631770.6134980299835497'
+                    valueType: custom
+                  - type: isActionsLibraryCall
+                    value: false
+                    valueType: custom
+                  - type: customParams
+                    value: ./execute-customParams.js
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: successMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: failureMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: mapperEnabled
+                    value: false
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+                paused: false
+          - condition: false
+            steps:
+              - id: '17151608706580.4346958034023203'
+                type: executeAction
+                name: execute2
+                params:
+                  - type: action
+                    value: '17151605353020.5175033904575299'
+                    valueType: custom
+                  - type: isActionsLibraryCall
+                    value: false
+                    valueType: custom
+                  - type: customParams
+                    value: ./execute2-customParams.js
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: successMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: failureMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: mapperEnabled
+                    value: false
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+                paused: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+    paused: false
+  - id: '17151610450200.44088893518671624'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '17151610225750.6765154728278866'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 1
+    fallthroughError: false
+    isChanged: true
+    paused: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17151606160020.6245620962289125'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleSearchInput.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleSearchInput.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleSearchInput.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

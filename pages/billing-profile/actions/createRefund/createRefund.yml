@@ -1,0 +1,105 @@
+id: '17151574655550.22423835400056769'
+kind: workflow
+name: createRefund
+nameConfigured: true
+steps:
+  - id: '17151574771090.4844516815997397'
+    type: httpRequest
+    name: stripeRequest
+    params:
+      - type: datasourceId
+        value: Stripe API
+        valueType: string
+        mustSelectFirst: true
+      - type: method
+        value: POST
+        valueType: string
+      - type: url
+        value: refunds
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: headers
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: charge
+            value: '{{ui.chargesTable.selectedRow.data.id}}'
+        valueType: custom
+        interpolationType: string
+      - type: body
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: structuredBody
+        value: []
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: bodyType
+        value: raw
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    paused: true
+    nameConfigured: true
+  - id: '17152455400880.959606944768344'
+    type: customAsyncCode
+    name: updateState
+    params:
+      - type: asyncCode
+        value: ./updateState.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+    paused: true
+  - id: '17151585968230.9070449896066808'
+    type: customAsyncCode
+    name: mockResponse
+    params:
+      - type: asyncCode
+        value: ./mockResponse.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+    paused: false
+mode: manual
+modeConfigured: false
+parentPageId: '17151498506780.160864454504003'
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.createRefund.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.createRefund.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.createRefund.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

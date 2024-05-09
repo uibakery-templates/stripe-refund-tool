@@ -1,0 +1,1 @@
+return {{ {search: ui.search.value, offset: 0, limit: ui.fetchcustomersTable.pageSize } }};

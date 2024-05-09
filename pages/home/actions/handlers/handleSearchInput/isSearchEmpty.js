@@ -1,0 +1,1 @@
+return {{data.length === 0}};

@@ -1,0 +1,1 @@
+return {{ {...data, data: data.data.map(charge => ({...charge,  paymentMethodType: charge.payment_method_details.type})) } }};

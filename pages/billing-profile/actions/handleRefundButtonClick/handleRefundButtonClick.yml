@@ -1,0 +1,38 @@
+id: '17151515929040.3778718461276611'
+kind: workflow
+name: handleRefundButtonClick
+nameConfigured: true
+steps:
+  - id: '17151516157670.09858481353614756'
+    type: customAsyncCode
+    name: openConfirmationModal
+    params:
+      - type: asyncCode
+        value: ./openConfirmationModal.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: false
+parentPageId: '17151498506780.160864454504003'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleRefundButtonClick.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleRefundButtonClick.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleRefundButtonClick.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: false

@@ -1,0 +1,40 @@
+id: '17151674655810.5597520476990736'
+kind: workflow
+name: handleCancelRefundButtonClick
+nameConfigured: true
+steps:
+  - id: '17151674785080.5343763045052912'
+    type: customAsyncCode
+    name: closeModal
+    params:
+      - type: asyncCode
+        value: ./closeModal.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: true
+parentPageId: '17151498506780.160864454504003'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleCancelRefundButtonClick.name}}"?
+  showSuccessToast: false
+  successToast: >-
+    Action "{{actions.handleCancelRefundButtonClick.name}}" successfully
+    executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleCancelRefundButtonClick.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

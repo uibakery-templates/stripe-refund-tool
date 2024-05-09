@@ -1,0 +1,1 @@
+return {{ {limit: ui.fetchcustomersTable.pageSize} }}

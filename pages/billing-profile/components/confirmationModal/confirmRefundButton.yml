@@ -1,0 +1,49 @@
+id: '17151577566210.8827149109099353'
+definitionId: button
+parentSlotId: '17151516453880.5362145797614628'
+styles:
+  xl:
+    gridItem:
+      x: 17
+      y: 0
+      w: 7
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 13
+      y: 0
+      w: 11
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: confirmRefundButton
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Refund
+  status:
+    value: danger
+    dataValue: primary
+    withData: false
+actions:
+  buttonClick:
+    - action: '17151588911470.7403127195078285'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+slots: []
