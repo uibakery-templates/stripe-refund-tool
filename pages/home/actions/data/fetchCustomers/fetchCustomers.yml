@@ -3,7 +3,7 @@ kind: workflow
 name: fetchCustomers
 nameConfigured: true
 steps:
-  - id: '17152479137830.2952431042111434'
+  - id: '17156709083750.749305706119366'
     type: customSQLQuery
     name: query
     params:
@@ -11,10 +11,6 @@ steps:
         value: ./query-query.sql
         valueType: interpolatedValue
         interpolationType: string
-      - type: datasourceId
-        value: '[Sample] MySQL'
-        valueType: custom
-        mustSelectFirst: true
       - type: preparedQuery
         value: ./query-preparedQuery.sql
         valueType: interpolatedValue
@@ -37,6 +33,9 @@ steps:
         valueType: interpolatedValue
       - type: mapperEnabled
         value: true
+        valueType: custom
+      - type: datasourceId
+        value: Stripe Refund Tool MySQL
         valueType: custom
     level: 0
     fallthroughError: false

@@ -3,20 +3,16 @@ kind: workflow
 name: fetchCustomerProfile
 nameConfigured: true
 steps:
-  - id: '17152486249720.23485745346183573'
+  - id: '17156709268050.5456421674619181'
     type: customSQLQuery
-    name: query
+    name: query2
     params:
       - type: query
-        value: ./query-query.sql
+        value: ./query2-query.sql
         valueType: interpolatedValue
         interpolationType: string
-      - type: datasourceId
-        value: '[Sample] MySQL'
-        valueType: custom
-        mustSelectFirst: true
       - type: preparedQuery
-        value: ./query-preparedQuery.sql
+        value: ./query2-preparedQuery.sql
         valueType: interpolatedValue
       - type: preparedQueryParams
         value:
@@ -29,13 +25,16 @@ steps:
         value: 2
         valueType: custom
       - type: successMapper
-        value: ./query-successMapper.js
+        value: ./query2-successMapper.js
         valueType: interpolatedValue
       - type: failureMapper
         value: ''
         valueType: interpolatedValue
       - type: mapperEnabled
         value: true
+        valueType: custom
+      - type: datasourceId
+        value: Stripe Refund Tool MySQL
         valueType: custom
     level: 0
     fallthroughError: false
